@@ -1,0 +1,22 @@
+.text{
+    font-size: 2rem;
+    color: #03426b;
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+.container{
+    width: 15rem;
+    margin-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+img{
+    width: 100%;  
+    width: 100%;
+    height: auto;
+    
+}
+.divCards{
+    display: flex;    
+    justify-content: space-evenly;
+}

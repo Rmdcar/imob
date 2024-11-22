@@ -1,0 +1,43 @@
+/* styles.module.css */
+.container {
+    position: relative;
+    width: 100%; /* ou a largura desejada */
+    height: 43vh; /* 33% da altura da viewport */
+    overflow: hidden; /* para cortar a imagem que ultrapassa os limites do contêiner */
+  }
+  
+  .image {
+    width: 100%; /* mantém o mesmo tamanho na horizontal */
+    height: 100%;
+    object-fit: cover; /* garante que a imagem não se distorça */
+    object-position: top; /* mostra a parte de cima da imagem */
+    display: block; /* para remover espaços em linha ao redor da imagem */
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* ajuste a opacidade para obter o efeito de escurecimento desejado */
+    z-index: 1;
+  }
+  
+  h2, p {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  h2 {
+    top: 40%; /* ajuste conforme necessário */
+  }
+  
+  p {
+    top: 50%; /* ajuste conforme necessário */
+  }
+  

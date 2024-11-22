@@ -1,0 +1,44 @@
+.firstsection{
+  display: flex;  
+  justify-content: space-between;
+  background-color: #cfcfcbaf;
+ 
+}
+.logo{
+  width: 6rem;
+  height: 6rem;
+  margin-left: 6rem;
+}
+
+.header{
+  color: #03426b;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-left: 4rem;  
+}
+
+.button {
+    border-radius: 8px;
+    border: 1px solid #03426b;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: #03426b;   
+    text-decoration: none;     
+  }
+  .button:hover {
+    border-color: #646cff;
+    background-color: #03426b;
+    color: #fff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  .divbutton{
+    padding: 2rem;
+  }

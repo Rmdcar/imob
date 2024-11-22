@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+}
+.cabecalho{
+  display: flex;
+
+}
+h3{
+  margin: 3rem 2rem;
+  color: #03426b;
+  font-size: 2rem;
+}
