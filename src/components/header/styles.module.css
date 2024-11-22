@@ -1,44 +1,153 @@
-.firstsection{
-  display: flex;  
+/* styles.module.css */
+
+.firstsection {
+  display: flex;
   justify-content: space-between;
   background-color: #cfcfcbaf;
- 
+  padding: 1rem;
+  flex-wrap: wrap; /* Adiciona flexibilidade ao layout */
 }
-.logo{
+
+.logo {
   width: 6rem;
   height: 6rem;
   margin-left: 6rem;
 }
 
-.header{
+.header {
   color: #03426b;
   font-size: 2rem;
   padding: 2rem;
-  margin-left: 4rem;  
+  margin-left: 4rem;
 }
 
 .button {
-    border-radius: 8px;
-    border: 1px solid #03426b;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #fff;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    color: #03426b;   
-    text-decoration: none;     
+  border-radius: 8px;
+  border: 1px solid #03426b;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: #03426b;
+  text-decoration: none;
+}
+
+.button:hover {
+  border-color: #646cff;
+  background-color: #03426b;
+  color: #fff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.divbutton {
+  padding: 2rem;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+  .logo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 3rem;
   }
-  .button:hover {
-    border-color: #646cff;
-    background-color: #03426b;
-    color: #fff;
+
+  .header {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin-left: 2rem;
   }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+
+  .button {
+    font-size: 0.9em;
   }
-  .divbutton{
-    padding: 2rem;
+
+  .divbutton {
+    padding: 1.5rem;
   }
+}
+
+@media (max-width: 768px) {
+  .firstsection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .header {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-left: 0;
+  }
+
+  .divbutton {
+    padding: 1rem;
+  }
+
+  .button {
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .header {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .divbutton {
+    padding: 0.5rem;
+  }
+
+  .button {
+    font-size: 0.7em;
+    padding: 0.4em 0.8em;
+  }
+}
+
+/* Media Query específica para iPhone SE (320px) */
+@media (max-width: 320px) {
+  .firstsection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1rem auto;
+  }
+
+  .header {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .divbutton {
+    padding: 0.5rem;
+  }
+
+  .button {
+    font-size: 0.6em;
+    padding: 0.3em 0.6em;
+  }
+}

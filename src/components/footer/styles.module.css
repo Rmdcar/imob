@@ -9,6 +9,7 @@
     background-color: #cfcfcbaf;
     color: #03426b;
     height: 10rem;    
+    
   }
   .itens{
     display: flex;
@@ -31,3 +32,113 @@ li{
     justify-content: space-around;
     font-size: 2rem;
 }
+@media (max-width: 1024px) {
+    .logo {
+      width: 5rem;
+      height: 5rem;
+      margin-left: 3rem;
+    }
+  
+    .header {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      margin-left: 2rem;
+    }
+  
+    .itens {
+      font-size: 0.9rem;
+    }
+    
+    .icones {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .firstsection {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; /* Centraliza o texto */
+      min-height: auto; /* Ajusta a altura para dispositivos menores */
+    }
+  
+    .logo {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .header {
+      font-size: 1.2rem;
+      padding: 1rem;
+      margin-left: 0;
+    }
+  
+    .itens {
+      font-size: 0.8rem;
+    }
+  
+    .imagens {
+      margin-bottom: 1rem;
+    }
+  
+    .icones {
+      margin-left: 0;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      width: 4rem;
+      height: 4rem;
+    }
+  
+    .header {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-left: 0;
+    }
+  
+    .itens {
+      font-size: 0.7rem;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .icones {
+      font-size: 1.2rem;
+      margin-left: 0;
+    }
+  }
+  
+  /* Media Query específica para iPhone SE (320px) */
+  @media (max-width: 320px) {
+    .firstsection {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo {
+      width: 3rem;
+      height: 3rem;
+      margin: 0 auto 1rem auto;
+    }
+  
+    .header {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      margin: 0 auto;
+    }
+  
+    .itens {
+      font-size: 0.6rem;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .icones {
+      font-size: 1rem;
+      margin-left: 0;
+    }
+  }
