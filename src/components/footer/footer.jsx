@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <section className={styles.firstsection}>
         <div className={styles.imagens}>
-          <img src="../public/logo.png" alt="logo" className={styles.logo} />
+          <img src="../logo.png" alt="logo" className={styles.logo} />
           <div className={styles.icones}>
           <FaFacebook size="1em" /> 
           <FaInstagram size="1em" />

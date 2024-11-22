@@ -5,7 +5,7 @@ function Header (){
     return (
         <>
         <section className={styles.firstsection}>
-        <Link to="/"><img src="../public/logo.png" alt="logo" className={styles.logo}/></Link>
+        <Link to="/"><img src="../logo.png" alt="logo" className={styles.logo}/></Link>
             
         <div>
         
