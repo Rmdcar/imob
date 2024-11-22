@@ -1,22 +1,76 @@
-.text{
+/* Estilos Gerais */
+.text {
     font-size: 2rem;
     color: #03426b;
-    padding: 3rem 3rem 3rem 3rem;
-}
-
-.container{
+    padding: 3rem;
+  }
+  
+  .container {
+    margin-left: 1rem;
     width: 15rem;
     margin-bottom: 12px;
     background-color: #fff;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
-}
-img{
-    width: 100%;  
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  img {
     width: 100%;
     height: auto;
-    
-}
-.divCards{
-    display: flex;    
+  }
+  
+  .divCards {
+    display: flex;
+    flex-wrap: wrap; /* Adiciona flexibilidade ao layout */
     justify-content: space-evenly;
-}
+    gap: 1rem; /* Adiciona espaçamento entre os cartões */
+  }
+  
+  /* Media Queries para Responsividade */
+  @media (max-width: 1024px) {
+    .text {
+      font-size: 1.5rem;
+      padding: 2rem;
+    }
+  
+    .container {
+      width: 12rem;
+    }
+  
+    .divCards {
+      justify-content: center; /* Alinha os cartões ao centro */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .text {
+      font-size: 1.2rem;
+      padding: 1.5rem;
+    }
+  
+    .container {
+      width: 10rem;
+    }
+  
+    .divCards {
+      flex-direction: column;
+      align-items: center; /* Centraliza os cartões verticalmente */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  
+    .container {
+      width: 90%; /* Torna os cartões responsivos e ajusta a largura */
+      margin-bottom: 10px;
+    }
+  
+    .divCards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
