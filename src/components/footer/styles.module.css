@@ -126,6 +126,7 @@ li {
     align-items: center;
     text-align: center;
     background-color: #cfcfcbaf; /* Garante que a cor de fundo seja mantida */
+    height: auto; /* Ajusta a altura para dispositivos menores */
   }
 
   .logo {

@@ -4,6 +4,7 @@ import Contato from "./pages/contato/Contato"
 import Cadastro from "./pages/cadastro/Cadastro"
 import Erro from "./pages/erro/Erro"
 import Login from "./pages/login/Login"
+import Dashboard from "./pages/dashboard/Dashboard"
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     path: "/cadastro",
     element: <Cadastro/>
   }, 
+  {
+    path: "/dashboard",
+    element: <Dashboard/>
+  },
   {
     path: "/*",
     element: <Erro/>
