@@ -1,14 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { nodeResolve } from '@rollup/plugin-node-resolve'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), nodeResolve()],
-  build: {
-    outDir: 'dist',
-    rollupOptions: {
-      external: ['react-toastify']
-    }
-  }
-})
+  plugins: [react()],
+  resolve: {
+    alias: {
+      react: 'react',
+    },
+  },
+});
