@@ -11,6 +11,7 @@
   background-color: #cfcfcbaf;
   color: #03426b;
   height: 10rem;
+  position: relative;
 }
 
 .itens {

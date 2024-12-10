@@ -1,81 +1,82 @@
 /* styles.module.css */
 
 .container {
-    position: relative; 
-    display: inline-block;
-  }
-  
-  .container::before { 
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background-color: rgba(0, 0, 0, 0.6); 
-    z-index: 1;
-  }
-  
-  .image {
-    height: auto;
-    width: 100%;
-    position: relative;    
-    background-position: center;
-  }
-  
+  position: relative; 
+  display: block; /* Garantir que ocupe a largura total */
+  width: 100%;
+}
+
+.container::before { 
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+  display: block;    
+  background-position: center;
+}
+
+h2 {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 2em; 
+  z-index: 2;
+}
+
+.botaoCadastro {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #03426b;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: #fff;  
+  position: absolute; 
+  top: 60%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Centraliza o botão */
+  z-index: 2;
+}
+
+.botaoCadastro:hover {
+  border-color: #646cff;
+  background-color: #fff;
+  color: #03426b;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
   h2 {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    font-size: 2em; 
-    z-index: 2;
+    font-size: 1.5em; /* Ajusta o tamanho da fonte para telas menores */
   }
-  
+
   .botaoCadastro {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #03426b;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    color: #fff;  
-    position: absolute; 
-    top: 60%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); /* Centraliza o botão */
-    z-index: 2;
+    font-size: 0.9em; /* Ajusta o tamanho do botão para telas menores */
+    padding: 0.5em 1em; /* Ajusta o padding para telas menores */
   }
-  
-  .botaoCadastro:hover {
-    border-color: #646cff;
-    background-color: #fff;
-    color: #03426b;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas muito pequenas */
   }
-  
-  /* Media Queries para Responsividade */
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.5em; /* Ajusta o tamanho da fonte para telas menores */
-    }
-  
-    .botaoCadastro {
-      font-size: 0.9em; /* Ajusta o tamanho do botão para telas menores */
-      padding: 0.5em 1em; /* Ajusta o padding para telas menores */
-    }
+
+  .botaoCadastro {
+    font-size: 0.8em; /* Ajusta o tamanho do botão para telas muito pequenas */
+    padding: 0.4em 0.8em; /* Ajusta o padding para telas muito pequenas */
   }
-  
-  @media (max-width: 480px) {
-    h2 {
-      font-size: 1.2em; /* Ajusta o tamanho da fonte para telas muito pequenas */
-    }
-  
-    .botaoCadastro {
-      font-size: 0.8em; /* Ajusta o tamanho do botão para telas muito pequenas */
-      padding: 0.4em 0.8em; /* Ajusta o padding para telas muito pequenas */
-    }
-  }
+}

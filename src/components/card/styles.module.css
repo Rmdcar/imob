@@ -1,76 +1,43 @@
-/* Estilos Gerais */
+.mainContainer {
+  margin-bottom: 50px; /* Adiciona espaço extra na parte inferior */
+}
+
+.divCards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas em telas grandes */
+  gap: 20px; /* Espaçamento entre os cards */
+  margin: 20px; /* Margem ao redor do grid */
+}
+
+.container {
+ 
+  display: flex; /* Altera para flexbox */
+  flex-direction: column; /* Organiza os itens em coluna */
+  border: 1px solid #ccc; /* Borda para visualização */
+  border-radius: 8px; /* Arredondar os cantos */
+  padding: 10px; /* Espaçamento interno do card */
+  transition: transform 0.2s; /* Efeito de transição ao passar o mouse */
+  height: 200px; /* Define uma altura fixa para os cards */
+  min-width: 200px; /* Define uma largura mínima para os cards */
+}
+
 .text {
-    font-size: 2rem;
-    color: #03426b;
-    padding: 3rem;
-  }
-  
-  .container {
-    margin-left: 1rem;
-    width: 15rem;
-    margin-bottom: 12px;
-    background-color: #fff;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
-  
+  margin: 5px 0; /* Margem entre os textos */
+  color: rgb(17, 17, 17);
+  flex: 1; /* Permite que os textos ocupem o espaço disponível */
+}
+
+.container:hover {
+  transform: scale(1.05); /* Aumenta o card ao passar o mouse */
+}
+
+
+
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
   .divCards {
-    display: flex;
-    flex-wrap: wrap; /* Adiciona flexibilidade ao layout */
-    justify-content: space-evenly;
-    gap: 1rem; /* Adiciona espaçamento entre os cartões */
+    grid-template-columns: 1fr; /* 1 coluna em telas menores */
   }
-  
-  /* Media Queries para Responsividade */
-  @media (max-width: 1024px) {
-    .text {
-      font-size: 1.5rem;
-      padding: 2rem;
-    }
-  
-    .container {
-      width: 12rem;
-    }
-  
-    .divCards {
-      justify-content: center; /* Alinha os cartões ao centro */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .text {
-      font-size: 1.2rem;
-      padding: 1.5rem;
-    }
-  
-    .container {
-      width: 10rem;
-    }
-  
-    .divCards {
-      flex-direction: column;
-      align-items: center; /* Centraliza os cartões verticalmente */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .text {
-      font-size: 1rem;
-      padding: 1rem;
-    }
-  
-    .container {
-      width: 90%; /* Torna os cartões responsivos e ajusta a largura */
-      margin-bottom: 10px;
-    }
-  
-    .divCards {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+}

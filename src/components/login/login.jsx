@@ -24,6 +24,8 @@ const BoxLogin = () => {
         } else {
           console.log(response)
           localStorage.setItem('token', response.data.token);
+          const expirationTime = new Date().getTime() + 1000*100
+          localStorage.setItem('tokenExpiration', expirationTime);
           navigate('/dashboard')
         }
         
