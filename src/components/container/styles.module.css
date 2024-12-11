@@ -51,18 +51,17 @@
   object-fit: cover;
 }
 
-.profileDespcription {
-  font-size: 4px;
+.profileDescription {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.profileDespcription > h3 {
-  margin: 10px 0 5px 0;
-  font-size: 1rem;
-  justify-content: center;
+.profileDescription > h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
 }
 
 form {
@@ -71,7 +70,9 @@ form {
   gap: 10px;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
   width: 100%;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -95,39 +96,39 @@ form button:hover {
 @media (max-width: 1024px) {
   .container {
     padding: 15px;
+    flex-direction: column;
   }
 
-  .left, .right {
-    min-width: 100%;
-    max-width: none;
+  .left,
+  .right {
     flex: none;
+    max-width: 100%;
   }
 
-  .profileDespcription {
-    font-size: 0.9rem;
-  }
-
-  .profileDespcription > h3 {
-    font-size: 1.2rem;
+  .profileDescription > h3 {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 10px;
-    justify-content: center;
   }
 
-  .left, .right {
-    min-width: 90%;
+  .profile img {
+    width: 80px;
+    height: 80px;
   }
 
-  .profileDespcription {
-    font-size: 0.8rem;
+  .profileDescription > h3 {
+    font-size: 0.9rem;
   }
 
-  .profileDespcription > h3 {
-    font-size: 1rem;
+  form input,
+  form textarea,
+  form button {
+    font-size: 13px;
+    padding: 8px;
   }
 }
 
@@ -136,22 +137,19 @@ form button:hover {
     padding: 5px;
   }
 
-  .left, .right {
-    min-width: 100%;
-    max-width: none;
-    flex: none;
-  }
-
   .profile img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
-  .profileDespcription {
-    font-size: 0.7rem;
+  .profileDescription > h3 {
+    font-size: 0.8rem;
   }
 
-  .profileDespcription > h3 {
-    font-size: 0.9rem;
+  form input,
+  form textarea,
+  form button {
+    font-size: 12px;
+    padding: 6px;
   }
 }

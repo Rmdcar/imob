@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Api from "../../services/Api";
 
+
 const Card = () => {
   const [imobi, setImobi] = useState([]);
 
@@ -22,13 +23,13 @@ const Card = () => {
       <div className={styles.divCards}>
         {imobi.map((item) => (
           <div key={item.id} className={styles.container}>
-            <Link to={`/contato/${item.id}`}>
+            <Link to={`/contato/${item._id}`}>
               <div className={styles.content}>
                 <h6 className={styles.text}>Tipo: {item.tipo}</h6>
                 <h6 className={styles.text}>Estado: {item.estado}</h6>
                 <h6 className={styles.text}>Cidade: {item.cidade}</h6>
                 <h6 className={styles.text}>Descrição: {item.descricao}</h6>
-                <h6 className={styles.text}>Valor: {item.valor}</h6>
+                <h6 className={styles.text}>Valor: R$ {item.valor}</h6>
               </div>
             </Link>
           </div>
