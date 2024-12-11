@@ -1,0 +1,122 @@
+/* Container Principal */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fundo neutro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Seção Esquerda */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+    border: 2px solid #ff6f61; /* Vermelho suave */
+    border-radius: 10px;
+    background-color: #ffecec; /* Fundo claro para contraste */
+    box-shadow: 0 4px 8px rgba(255, 111, 97, 0.2);
+  }
+  
+  /* Seção Direita */
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 50%;
+    padding: 20px;
+    border: 2px solid #2b2996; /* Azul profundo */
+    border-radius: 10px;
+    background-color: #eef0ff; /* Azul claro */
+    box-shadow: 0 4px 8px rgba(43, 41, 150, 0.2);
+  }
+  
+  /* Títulos */
+  h1, h4 {
+    color: #2b2996; /* Azul profundo */
+    text-align: center;
+  }
+  
+  h6 {
+    color: #555; /* Cinza escuro */
+    margin-bottom: 10px;
+  }
+  
+  /* Formulários */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 5PX;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Texto escuro */
+  }
+  
+  textarea, input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Botões */
+  button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2b2996; /* Azul profundo */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1a1a7d; /* Azul mais escuro */
+  }
+  
+  /* Links */
+  a {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2b2996; /* Azul profundo */
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ff6f61; /* Vermelho suave */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  }
+  

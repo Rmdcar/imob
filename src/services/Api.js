@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export const urlApi = 'https://imob-backend.vercel.app/';
+export const urlApi = 'http://localhost:3000/';
 
 const Api = axios.create({
-  baseURL: 'https://imob-backend.vercel.app/',
+  baseURL: 'http://localhost:3000/',
   headers:{
   'Content-Type': 'application/json'
   }
